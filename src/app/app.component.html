@@ -1,4 +1,10 @@
-<hello [name]=""></hello>
+<hello [name]="name"></hello>
 <p>
-  
+  Current Boolean: <strong>{{ value }}</strong>
+</p>
+<p>
+  <button (click)="toggleActivate()">
+    <span *ngIf="!value">Activate</span>
+    <span *ngIf="value">Deactivate</span>
+  </button>
 </p>
